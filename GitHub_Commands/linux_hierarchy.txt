@@ -1,0 +1,7 @@
+home
+var
+usr
+bin
+tmp
+lib
+etc

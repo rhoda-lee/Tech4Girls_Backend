@@ -1,0 +1,4 @@
+The 3 groups of users are the owner, group and others.
+The owner is the one that owns the file
+The group is made up of other users on the sytem who are associated to the file
+Others is also made up of all other users on the system

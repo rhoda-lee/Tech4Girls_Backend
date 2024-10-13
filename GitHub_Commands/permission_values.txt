@@ -1,0 +1,4 @@
+The nodes used to represent permissions are:
+4 represents read - r
+2 represents write - w
+1 represents execute - x

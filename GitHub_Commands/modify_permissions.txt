@@ -1,0 +1,16 @@
+List files and directories of current working directory:
+
+rhodalee@Rhoda-Lee:~/Tech4Girls_Backend/GitHub_Commands$ ls
+README.md    branch_work.txt  home_dir_root_dir.txt  linux_ownership.txt        permissions.txt
+abs_rel.txt  branches.txt     linux_hierarchy.txt    ownership_permissions.txt  readme_path.txt
+
+
+Change mode using the 'chmod' command and node representation:
+
+rhodalee@Rhoda-Lee:~/Tech4Girls_Backend/GitHub_Commands$ chmod 644 ownership_permissions.txt
+
+
+Show user permissions using the 'ls -l' command:
+
+rhodalee@Rhoda-Lee:~/Tech4Girls_Backend/GitHub_Commands$ ls -l ownership_permissions.txt
+-rw-r--r-- 1 rhodalee rhodalee 1159 Oct 13 19:12 ownership_permissions.txt

@@ -1,0 +1,7 @@
+To create a new branch we use the git branch command followed by the name of the branch
+    eg: git branch rhodalee-branch
+After creating the branch we need to checkout of the working branch into the branch we just created using the git checkout command
+    eg: git checkout rhodalee-branch
+Then we will push the branch to the remote repository on GitHub
+    eg: git push origin rhodalee-branch
+After that you can switch to your GitHub account to see if the branch was published successfully.

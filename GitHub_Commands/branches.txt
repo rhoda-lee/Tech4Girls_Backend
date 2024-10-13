@@ -1,0 +1,5 @@
+The git pull command is used to pull new changes or commits from our remote repository or GitHub to our local repository on our local computer.
+It allows us to update our local repository by fetching any changes and integrating them into our local branch.
+
+The git command is useful to me when collaborating with others since I will pull any changes collaborators will make to my local computer to avoid conflicts.
+I also use the command to bring my local branch up-to date with the remote branch.

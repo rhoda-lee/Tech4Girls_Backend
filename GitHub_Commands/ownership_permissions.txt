@@ -1,0 +1,27 @@
+File ownership in Linux system determines who owns a file.
+A user can be the owner, part of a group or just another user on the system
+
+The file modes determine the access level a user has to a file whether read , write or execute permissions
+Users with read permission can only view or read a file
+Users with write permissions can make changes to a file
+Users with execute permissions can run the file a sa program
+A user can have one, two, all or none of these permissions to  file
+
+Permissions are applied to every group, where:
+o - owner
+g - group
+u - user
+The permission are either represented by a string of characters 'rwx' where:
+r - read
+w - write
+x - execute
+and a hyphen '-' is placed where the user does not have permission
+So in a case where the owner has all permission and both group and others have only read permissions will be like:
+-rwxr--r--, This can be displayed using the ls -l linux command
+
+The other way they are represented is using the nodes which are represented by numbers
+The nodes are used to represent permissions
+4 represents read
+2 represents write
+1 represents execute
+The owner permission is represented by 7 ie; 4 + 2 + 1

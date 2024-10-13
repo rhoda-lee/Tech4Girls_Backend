@@ -1,0 +1,6 @@
+Branching is a feature that allows developers to collaboratively work on a project at the same time 
+without interfering with eachothers code or contribution.
+It also helps reduce conflicts that could arise from working directly in the main branch.
+
+Each collaborator creates a branch and works within it
+They then open a pull request which if it has no conflicts will be merged into th main branch so they are up-to date.

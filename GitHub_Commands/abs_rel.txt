@@ -1,0 +1,8 @@
+Absolute paths are used when you are far from the directory you want to go into but still go into it.
+This means that the directory you are accessing is not a direct child of the parent directory or the directory you are currently in.
+	eg: cd rhodalee/Tech4Girls_Backend/GitHub_Commands
+    
+Relative paths are used to specify the location of a file or directory relative to the parent directory.
+This happens by moving from a parent directory to its direct child directory after the other 
+until you reach your destinated directory
+	eg: cd Tech4Girls_Backend

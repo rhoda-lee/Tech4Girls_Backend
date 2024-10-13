@@ -1,0 +1,2 @@
+The read permission is represented by the letter 'r'. This means a user,
+whether admin, group or other with the 'r' representation has read permissions to a file.

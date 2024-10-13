@@ -1,0 +1,7 @@
+Below are the steps and command used to create the directories:
+
+rhodalee@Rhoda-Lee:~/Tech4Girls_Backend/GitHub_Commands$ mkdir Backend_Projects
+rhodalee@Rhoda-Lee:~/Tech4Girls_Backend/GitHub_Commands$ cd Backend_Projects
+rhodalee@Rhoda-Lee:~/Tech4Girls_Backend/GitHub_Commands/Backend_Projects$ mkdir ProjectA ProjectB
+rhodalee@Rhoda-Lee:~/Tech4Girls_Backend/GitHub_Commands/Backend_Projects$ ls
+ProjectA  ProjectB

@@ -1,0 +1,7 @@
+The root directory is the topmost directory in the Linux file system. 
+It contains all other directories like the "home", "usr", "bin", "temp", "etc" directory among others.
+It is also the strting point of the entire file system.
+
+The home directory on the other hand is a subdirectory of the root directory.
+This means that the home directory can be found inside the root directory.
+It contains individual directories for each user account on the system.

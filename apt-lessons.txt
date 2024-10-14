@@ -1,3 +1,4 @@
 Package Manager
 These are used to manage software
 apt package manager is an example of a package manager
+run: sudo apt update

@@ -1,0 +1,25 @@
+For the  example given:  -rw-r--r-- 1 userhacsa userhacsa 70 Oct 14 10:00 script.sh
+
+The first symbol, "-" indicates that it is a regular file
+
+The next 3 characters, "rw-" are the file permissions of the owner of the file
+If a user has 100% percent access to a file it would be "rwx"
+This means they have Read, Write and Execute permissions.
+
+In this case, the owner has read and write permission represented by the "r" and "w" respectively
+The "-" symbol means they don't have execute permission on that file.
+
+The same thing apply to the other 2 user groups, "group" and "others"
+In this case both the "group" and "others" have only read permission to the file 
+and cannot write into the file or execute the file.
+
+The character "1" means that the file "script.sh" has only one directory entry
+
+"userhacsa" is the owner of the file
+The second "userhacsa" is the group associated to the file
+
+The character "70" is the size of the file in bytes
+
+"Oct 14 10:00" is the date and time the file was last changed or modified
+
+"script.sh" is the name of the file

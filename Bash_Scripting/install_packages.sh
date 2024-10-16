@@ -1,4 +1,4 @@
-#!/bin/
+#!/bin/bash
 
 #This is a script meant to update package list and install 3 packages, ie, fortune, cowsay and cmatrix
 

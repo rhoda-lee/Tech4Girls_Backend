@@ -1,0 +1,12 @@
+In the terminal, I run the 'python3' command
+This opens up the python interpreter in the terminals
+
+rhodalee@Rhoda-Lee:~/Tech4Girls_Backend/Python_Basics$ python3
+Python 3.12.3 (main, Sep 11 2024, 14:17:37) [GCC 13.2.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+>>> x = 4
+>>> y = 6
+>>> z = x + y
+>>> print(z)
+10
+>>> 

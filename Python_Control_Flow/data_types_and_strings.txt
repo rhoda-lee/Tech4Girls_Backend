@@ -1,0 +1,95 @@
+
+
+Data types are the categories or classification into which data items are grouped.
+In Python, there are several data types, some of which are, 
+integers, floating point numbers, strings, lists, tuples and sets.
+
+Integers (int)
+These are numeric data types that are whole and do not have a fraction part.
+Example is: my_int = 47
+
+Strings (str)
+Strings are a collection of characters that can be a number, alphabet 
+or a symbol enclosed in single or double quotation marks.
+Example is: my_string = "This is an example of a String data type"
+
+Floats (float)
+A float data type or a floating point number is a numeric data type 
+that has a fractional or decimal part.
+Example is: my_float = 3.54
+
+Lists (list)
+The list data type stores data in an array and are enclosed in a square bracket '[]'.
+Example: my_list = ['Dede', 22, 'Afua', 21.3]
+
+Tuples (tuple)
+The tuple data type is a python data type similar to the list data type
+but elements are enclosed in a curved bracket '()'. Unlike lists, they are 
+immutable and hence their contentent can't be modified.
+Examaple: my_tuple = ('Green', 'Red', 'Beige', 'Pink')
+
+Sets (set)
+Sets are values that are unordered and they have no duplicates. 
+They are notified or enclosed in curly braces.
+eg: my_set = {'Adult', 'Child', 'Aged', 'Young Adult'}
+Sets don't care about the order of things amd are mostly used to remove duplicates
+They are used to check the membership of values 
+Example is: print('Grace' in my_set) #This should return True
+
+
+
+
+String Methods
+String methods are in-built methods that can be used on strings to manipulate data.
+Some of which are upper(), lower(), replace(), split(), join(), find().
+
+.upper()
+The .upper() string method when used changes all the letters in the string to uppercase.
+Example: 
+my_string = 'This is a random string'
+print(my_string.upper())
+
+
+.lower()
+The .lower() string method when used changes all the letters in the string 
+to lowercase. This is the opposite of the .upper() method.
+Example:
+my_string = 'This is a random string'
+print(my_string.lower())
+
+
+.replace()
+The .replace() method is used to replace a character or substring 
+in a string with a new substring. It takes two areguments, 
+the substring to be replaced and the new replacement.
+Example:
+my_string = 'This is a random string'
+print(my_string.replace('This', 'That'))
+
+
+.split()
+The .split() method is used to split a string into an array of strings.
+Example:
+my_string = 'This is a random string'
+print(my_string.split())
+# Output: ['This', 'is', 'a', 'random', 'string']
+
+
+.join()
+The .join() method does the opposite of the .split() method.
+It takes a list of strings and joins them into a single string by a delimeter.
+The .join() method is appended to the specified delimeter and takes 
+the string as an aregument
+Example: 
+my_list = ['This', 'is', 'a', 'random', 'string']
+print(' '.join(my_list))
+# Output: 'This is a random string'
+
+
+.find()
+The .find() method is used to find a substring in a string but 
+it return the index of the first letter or occurrence of the substring.
+Example is:
+my_string = 'This is a random string'
+print(my_string.find('random'))
+# Output: 10

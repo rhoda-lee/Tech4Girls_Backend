@@ -1,1 +1,140 @@
-What is object oriented programming
+What is object oriented programming?
+
+Object Oriented Programming (OOP) is a way of writing programs in classes which represents a real world model of almost anything.
+It could be a representation of a person, a place, animal or some inanimate object.
+OOP makes use of objects that are instances of a real world object.
+Classes and objects in OOP have attributes (features) and methods(functionality of actions they can perform)
+
+For instance, let's say we have a class called 'Human', it is typical every Human has some attributes like
+a name, age and height. Also Humans can eat, sleep and drink.
+In this class, the attribute are the name, age and height and the methods are to eat(), sleep() and drink()
+
+We can also create objects or instances of the class.
+We are all Humans in general but we have our individual differences.
+With OOP we can easily model that and have instances for each unique person where if they have specific feature and methods
+unique to them, we can add it.
+
+There are four main principles in Object Oriented Programming
+1. Encapsulation
+2. Abstraction
+3. Inheritance
+4. Polymorphism
+
+Encapsulation
+Encapsulation is concerned with putting attributes and methods into classes.
+Like a capsule contains items. The concept of encapsulation is putting related functions and 
+features inside of designated classes. This restricts direct access to the attributes and methods of
+a particular class.
+Hence, it groups related methods and attributws into classes
+In our Human slass example, the class encapsulates data(attributes and methods) such as name, age, sleep() and eat()
+
+
+''' We model our Human class'''
+class Human:
+    def __init__(self, name, age, height):
+        self.name = name
+        self.age = age
+        self.height = height
+    
+     def sleep(self):
+        return f'{self.name} is sleeping!'
+
+    def eat(self):
+        return f'{self.name} is eating!'
+
+    def drink(self):
+        return f'{self.name} is drinking!'
+
+
+
+
+
+Abstraction
+Abstraction is a way of writing programs such that, 
+we hide the complicated details of an application and only show the needed aspects.
+An abstract method in pyhton is a method that is declared in a parent class but has not been implemented.
+This method can then be used in child classes where we pass implementation necessary to that class only.
+Let's use our Human class as an example
+
+
+''' We model our Human class'''
+class Human:
+    def __init__(self, name, age, height):
+        self.name = name
+        self.age = age
+        self.height = height
+    
+    @abstractclass
+    def sleep(self):
+        pass
+
+    @abstractclass
+    def eat(self):
+        pass
+
+    @abstractclass
+    def drink(self):
+        pass
+
+
+'''Create a class Woman that inherits from the Human class'''
+class Woman(Human):
+    def __init(self, name, age, height, gender = Female):
+        super().__init__(name, age, height):
+        self.gender = gender
+
+    #Incluse implementation for the abstract classes
+
+    def sleep(self):
+        return f'{self.name} is sleeping!'
+
+    def eat(self):
+        return f'{self.name} is eating!'
+
+    def drink(self):
+        return f'{self.name} is drinking!'
+
+
+'''From the example above, we can say that Human is an abstract class.
+It served as a template for the Woman class without having any complex implementation inside of it
+We did the implementation necessary to the Woman class inside of it, using the Human class as reference
+This explains the concept of Abstraction'''
+
+
+
+Inheritance
+The concept of inheritance is the idea of passing down the features a nd functions of a class to another class.
+just like a parent passes down their features and some abilities to their children,
+so dos classes in OOP.
+The class that inherits the attributes and methods from the parent class is the Child or Subclass
+The class that passes down the attributes and methods to another class is the Parent or Superclass
+
+Let us use a class called Car to explain the concept of Inheritance
+
+'''Modeling th parent class'''
+class Car:
+    def __init__(self, make, model, year):
+        self.make = make
+        self.model = model
+        self.year = year
+
+    def display_info(self):
+        '''Method to display car information'''
+        return f'The {self.make} {self.model} was released in the year {self.year}'
+
+
+'''Create a subclass to inherit the Car class'''
+class ElectricCar(Car):
+    def __init__(self, make, model, year, color):
+        super().__init__(make, model, year)
+        self.color = color
+
+    def display_info(self):
+        '''Method to display car information'''
+        return f'The {self.color} {self.make} {self.model} was released in the year {self.year}'
+
+'''The ElectricCar class inherits from the car class. 
+The super() method is used to initialize the instance variables 
+from the Car class so the ElectricCar class can use it.
+This explains the concept of inheritance'''
+

@@ -138,3 +138,66 @@ The super() method is used to initialize the instance variables
 from the Car class so the ElectricCar class can use it.
 This explains the concept of inheritance'''
 
+
+Polymorphism
+In programming, Polymorphism refers to the ability of different objects 
+to respond to the same method call in different ways.
+This means that one method call can take different forms depending on how they are called
+on a particular subclass.
+Let us use a Superclass Animal as an example:
+
+'''Modeling a class, Animal'''
+class Animal:
+    def __init__(self, name):
+        self.name = name
+
+    def speak(self):
+        pass # method will be implemented in child classes
+
+# First subclass
+class Dog(Animal):
+    def speak(self):
+        return f"{self.name} says Woof!"
+
+# Second subclass
+class Cat(Animal):
+    def speak(self):
+        return f"{self.name} says Meow!"
+
+# Third subclass
+class Cow(Animal):
+    def speak(self):
+        return f"{self.name} says Moo!"
+
+def make_animal_speak(animal):
+    print(animal.speak())
+
+# Creating instances
+dog = Dog("Buddy")
+cat = Cat("Ginger")
+cow = Cow("Mullan")
+
+# Using the function
+make_animal_speak(dog)  # Buddy says Woof!
+make_animal_speak(cat)  # Ginger says Meow!
+make_animal_speak(cow)  # Mullan says Moo!
+
+
+Object Oriented Programming is beneficial in software development in many ways, some of which are;
+
+Code reusability
+Inheritance in OOP helps to reuse code that belonged to one class 
+inside of another class without repeating the code for that functionality.
+
+Encapsulation
+The concept of Encapsulation in OOP allows developers to group related methods and attributes into classes
+This improves readability of our code
+
+Code Maintainace
+writing code using OOP makes it easy to maintain the code base since there is consistency in the code
+
+The previous examples used to explain the four main principles of OOP,
+site real world scenarios of the use of OOP
+Typically a human would have a name, age and height
+OOP allows us to model this real-world instance using classes and 
+even create instances of the class using methods

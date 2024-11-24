@@ -23,6 +23,9 @@ VALUES ('Ama', 'ama@example.com'),
 ('Abena', 'abena@example.com'),
 ('Ajoa', 'adjoa@example.com');
 
+-- SELECTING ALL COLUMNS AND ROWS IN THE USERS TABLE TO BE DISPLAYED
+SELECT * FROM Users;
+
 -- OUTPUT
 /* mysql> SELECT * FROM Users;
 +----+----------+-------------------+---------------------+

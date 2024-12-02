@@ -158,5 +158,31 @@ def delete_laptop_by_number(laptop_number):
 
     except Exception as e:
         return jsonify({'Error': f'There was an error: {e}'}), 500
+    
 
 
+# endpoint to search for a laptop
+@laptops_bp.route('/laptops/search/<string:search>', methods=['GET'])
+def search_laptop(search):
+    try:
+        laptops = laptopscrud.search_laptop(search)
+
+        if laptops:
+            laptops_data = [{
+                'laptop_name': laptop.laptop_name,
+                'laptop_number': laptop.laptop_number,
+                'specification': laptop.specification
+            } for laptop in laptops]
+
+            return jsonify({
+                'data': laptops_data
+            }), 200
+        
+        else:
+            return jsonify({
+                'Message': f'No laptops found matching "{search}".'
+            }), 404
+        
+    except Exception as e:
+        return jsonify({'Error': f'There was an error: {e}'}), 500
+    

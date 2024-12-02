@@ -6,7 +6,7 @@ Base = declarative_base()
 
 class Laptops(Base):
     __tablename__ = 'laptops'
-    laptop_name = Column(String(100), unique = True, nullable = False)
+    laptop_name = Column(String(100), nullable = False)
     laptop_number = Column(Integer, primary_key = True, nullable = False)
     specification = Column(String(250), nullable = False)
 

@@ -2,6 +2,20 @@
 
 This project demonstrates how to create and test RESTful APIs using Flask. The API provides CRUD operations for managing laptops.
 
+## Table of Contents
+1. [Getting Started](#getting-started)
+2. [API Endpoints and Instructions](#api-endpoints-and-instructions)
+   1. [Add a Laptop](#add-a-laptop)
+   2. [Get All Laptops](#get-all-laptops)
+   3. [Get a Laptop by Name](#get-a-laptop-by-name)
+   4. [Get a Laptop by Laptop Number](#get-a-laptop-by-laptop-number)
+   5. [Update a Laptop by Laptop Number](#update-a-laptop-by-laptop-number)
+   6. [Delete a Laptop by Laptop Number](#delete-a-laptop-by-laptop-number)
+   7. [Search Laptops by Partial Matches](#search-laptops-by-partial-matches)
+3. [Testing the API Using Postman](#testing-the-api-using-postman)
+4. [Error Handling](#error-handling)
+5. [Run the Application](#run-the-application)
+
 ## Getting Started
 
 Follow the steps below to set up and test the API.

@@ -207,7 +207,9 @@ Error (404 Not Found):
 - Click Send and verify the response.
 
 ### Search for a Laptop
-- 
+- Select GET method and enter the URL http://localhost:5000/laptops/search/item_searched 
+- Replace item_searched with your query
+- Click Send and verify the response.
 
 ## Error Handling
 - Ensure all responses are in JSON format with appropriate status codes.

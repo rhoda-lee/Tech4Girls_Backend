@@ -13,6 +13,12 @@ class LaptopsCrud:
         self.session.commit()
         return f'Laptop with name {laptop_name} and number {laptop_number} with specifications: {specification} has been added'
     
+    def search_laptop(self, search):
+        return self.session.query(Laptops).filter(
+            (Laptops.laptop_name.ilike(f"%{search}%")) |
+            (Laptops.specification.ilike(f"%{search}%"))
+        ).all()
+    
     def select_all_laptop(self):
         return self.session.query(Laptops).all()
     

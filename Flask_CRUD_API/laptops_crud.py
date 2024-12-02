@@ -16,7 +16,7 @@ class LaptopsCrud:
     def select_all_laptop(self):
         return self.session.query(Laptops).all()
     
-    def select_laptop_by_laptop_name(self, laptop_name):
+    def select_laptop_by_name(self, laptop_name):
         return self.session.query(Laptops).filter_by(laptop_name = laptop_name).first()
     
     def select_laptop_by_number(self, laptop_number):

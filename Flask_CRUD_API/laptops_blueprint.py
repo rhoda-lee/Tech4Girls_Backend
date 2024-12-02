@@ -82,5 +82,81 @@ def get_laptop_by_name(laptop_name):
 
 
 
+# endpoint to get a laptop by number
+@laptops_bp.route('/laptops/number/<int:laptop_number>', methods=['GET'])
+def get_laptop_by_number(laptop_number):
+    try:
+        # query database for the laptop
+        laptop = laptopscrud.select_laptop_by_number(laptop_number)
+
+        if laptop:
+            return jsonify({
+                'laptop_name': laptop.laptop_name,
+                'laptop_number': laptop.laptop_number,
+                'specification': laptop.specification
+            }), 200
+        else:
+            return jsonify({
+                'Error': f'Laptop with number {laptop_number} does not exist.'
+            }), 404
+        
+    except Exception as e:
+        return jsonify({
+            'Error': f'There was an error: {e}'
+        }), 500
+
+
+
+# endpoint to update laptop
+@laptops_bp.route('/laptops/number/<int:laptop_number>', methods=['PUT'])
+def update_laptop_by_number(laptop_number):
+    try:
+        data = request.get_json()
+        laptop_name = data.get('laptop_name')
+        specification = data.get('specification')
+
+        laptop_to_update = laptopscrud.update_laptop(
+            laptop_name = laptop_name,
+            laptop_number = laptop_number,
+            specification = specification
+            )
+
+        if laptop_to_update:
+
+            return jsonify({
+                'Message': f"Laptop with number {laptop_number} updated successfully.",
+                'updated_data': {
+                    'laptop_name': laptop_to_update.laptop_name,
+                    'laptop_number': laptop_to_update.laptop_number,
+                    'specification': laptop_to_update.specification
+                }
+            }), 200
+        
+        else:
+            return jsonify({'Error': f"Laptop with number {laptop_number} not found."}), 404
+        
+    except Exception as e:
+        return jsonify({'rEror': f'There was an error: {e}'}), 500
+
+
+# endpoint to delete a laptop
+@laptops_bp.route('/laptops/delete/<int:laptop_number>', methods=['DELETE'])
+def delete_laptop_by_number(laptop_number):
+    try:
+        
+        laptop = laptopscrud.delete_laptop(laptop_number)
+        
+        if laptop:
+            return jsonify({
+                'Message': laptop
+                }), 200
+        
+        else:
+            return jsonify({
+                'Error': 'Laptop not Found'
+                }), 404
+
+    except Exception as e:
+        return jsonify({'Error': f'There was an error: {e}'}), 500
 
 
